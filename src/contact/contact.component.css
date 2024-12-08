@@ -1,0 +1,25 @@
+.contact{
+  background-color: whitesmoke;
+}
+
+.separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.separator .line {
+  width: 80px;
+  height: 4px;
+  background-color: white;
+}
+
+.separator .star {
+  font-size: 40px;
+  color: white;
+}
+.btn{
+  background-color: #1abc9c;
+  color: white;
+}

@@ -1,0 +1,60 @@
+.port{
+  /* background-color: #1abc9c; */
+}
+
+.separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.separator .line {
+  width: 120px;
+  height: 4px;
+  background-color: black;
+}
+
+.separator .star {
+  font-size: 40px;
+  /* color: white; */
+}
+
+.pic {
+  position: relative;
+  /* transition: all 0.5s; */
+}
+
+.layer {
+  /* background-color: rgba(14, 204, 147, 0.5); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+  width: 100%;
+  height: 100%;
+
+}
+
+.pic:hover .layer {
+  opacity: 1;
+  background-color: rgba(14, 204, 147, 0.8);
+}
+.icon {
+ text-align: center ;
+ font-size: 100px;
+ color: white;
+ font-weight: bold;
+}
+.port{
+  position: relative;
+}
+.pic{
+  cursor: pointer;
+}
+.portLayer{
+  background-color: rgba(48, 128, 202, 0.5);
+}

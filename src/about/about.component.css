@@ -1,0 +1,21 @@
+.about{
+  background-color: #1abc9c;
+}
+
+.separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.separator .line {
+  width: 80px;
+  height: 4px;
+  background-color: white;
+}
+
+.separator .star {
+  font-size: 40px;
+  color: white;
+}

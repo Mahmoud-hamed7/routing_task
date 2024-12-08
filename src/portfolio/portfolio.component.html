@@ -1,0 +1,82 @@
+<div class="port p-5 vh-100">
+  <h1 class="fs-1 fw-bold text-center">PORTFOLIO COMPONENT</h1>
+  <div class="separator mb-3">
+    <span class="line"></span>
+    <span class="star">★</span>
+    <span class="line"></span>
+  </div>
+
+  <div class="container justify-content-center align-items-center">
+    <div class="row g-5">
+
+
+      <div class="col-md-4 mt-5">
+        <div (click)="showPic('./assets/img/poert1.png')" class="pic">
+          <img #picture src="./assets/img/poert1.png" class="w-100 d-block rounded rounded-2" alt="">
+          <div class="layer d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-plus icon"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mt-5">
+        <div (click)="showPic('./assets/img/port2.png')" class="pic">
+          <img #picture src="./assets/img/port2.png" class="w-100 d-block rounded rounded-2" alt="">
+          <div class="layer d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-plus icon"></i>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 mt-5">
+        <div (click)="showPic('./assets/img/port3.png')" class="pic">
+          <img #picture src="./assets/img/port3.png" class="w-100 d-block rounded rounded-2" alt="">
+          <div class="layer d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-plus icon"></i>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 mt-5">
+        <div (click)="showPic('./assets/img/poert1.png')" class="pic">
+          <img #picture src="./assets/img/poert1.png" class="w-100 d-block rounded rounded-2" alt="">
+          <div class="layer d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-plus icon"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mt-5">
+        <div (click)="showPic('./assets/img/port2.png')" class="pic">
+          <img #picture src="./assets/img/port2.png" class="w-100 d-block rounded rounded-2" alt="">
+          <div class="layer d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-plus icon"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mt-5">
+        <div (click)="showPic('./assets/img/port3.png')" class="pic">
+          <img #picture src="./assets/img/port3.png" class="w-100 d-block rounded rounded-2" alt="">
+          <div class="layer d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-plus icon"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div #layer class="portLayer d-none position-absolute top-0 start-0 end-0 bottom-0 z-3 d-flex align-items-center justify-content-center" (click)="closeLayer($event)">
+    <div class="container d-flex align-items-center justify-content-center">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-10 col-12 d-flex align-items-center justify-content-center position-fixed">
+          <img [src]="imgSrc" class="w-50 bg-danger d-block rounded rounded-2" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
